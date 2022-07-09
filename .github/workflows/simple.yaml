@@ -1,0 +1,19 @@
+name: Check Shell Command
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get uname -a
+        run: uname -a
+
+      - name: get public ip address
+        run: curl ifconfig.cc
+
+      - name: get hostname
+        run: hostname
+      
+      - name: get df -hT
+        run: df -hT
