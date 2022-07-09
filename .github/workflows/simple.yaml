@@ -17,3 +17,6 @@ jobs:
       
       - name: get df -hT
         run: df -hT
+
+      - name: list file in the current working folder
+        run: ls -lrth
