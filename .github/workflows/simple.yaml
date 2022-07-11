@@ -3,7 +3,7 @@ name: Check Shell Command
 on: [push]
 
 jobs:
-  run-shell-command:
+  run-shell-commdsfasfand:
     runs-on: ubuntu-latest
     steps:
       - name: get uname -a
