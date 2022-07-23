@@ -20,3 +20,13 @@ jobs:
 
       - name: list file in the current working folder
         run: ls -lrth
+  
+  run-shel-on-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Get current directory
+        run: Get-Location
+
+      - name: Get current directory by using Bash
+        run: pwd
+        shell: bash
